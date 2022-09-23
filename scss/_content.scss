@@ -1,0 +1,122 @@
+
+// Nav-bar
+.nav-item{
+    font-size: $text-xsmall;
+    margin: $spacing-xsmall;
+    
+}
+
+#link:hover {
+    color: $alternative-1;
+
+}
+
+
+// Página Somos-diferentes
+
+#caja{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: $spacing-xsmall;
+    line-height: $spacing-small;
+    box-shadow: 0 5px 40px $shadow;
+    background-color: $alternative-2;
+    &:hover{
+        background-color: $alternative-1;
+    }
+}
+
+//Página Regístrate
+
+#pageRegistro{
+    background-image: url(../img/bgRegistro.jpg);
+    background-size: cover;
+
+   
+}
+
+
+#formRegistro form{
+    box-shadow: 0 5px 40px $shadow;
+    background-color: $alternative-2;
+    border-radius: $spacing-xsmall;
+    padding: $spacing-small;
+    justify-content: center;
+    align-items: center;
+    line-height: $spacing-medium;
+    margin: auto;
+
+    input {
+        &:hover{
+            border-color: $hover-botones;
+        }
+    }
+   
+}
+
+//Página de Contacto
+
+#formContact form{ 
+   
+    box-shadow: 0 5px 40px $shadow;
+    background-color: $alternative-2;
+    border-radius: $spacing-xsmall;
+    padding: $spacing-xsmall;
+    justify-content: center;
+    align-items: center;
+    line-height: $spacing-medium;
+    margin:auto;
+
+    input{
+        &:hover{
+            border-color: $hover-botones;
+        }
+    }
+    textarea{
+        &:hover{
+            border-color: $hover-botones;
+        }
+    }
+
+} 
+
+// Footer
+
+#politicas a{
+    color: var(--primary-2);
+    text-decoration: none;
+    &:hover{
+        color: $alternative-1;
+    }
+    
+}
+
+#redes{
+    @include flex (row, start, center);
+    gap: $spacing-small;
+    a{
+        font-size: $text-xsmall;
+        text-decoration: none;
+        margin-top: $spacing-small;
+        transition: all .4s ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+            color: $hover-botones;
+        }
+      
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
